@@ -26,13 +26,21 @@ certifi==2024.12.14
 charset-normalizer==3.4.0
     # via requests
 click==8.1.8
-    # via uvicorn
+    # via
+    #   face-recognition
+    #   uvicorn
 colorama==0.4.6
     # via
     #   click
     #   tqdm
 deprecation==2.1.0
     # via postgrest
+dlib==19.24.6
+    # via face-recognition
+face-recognition==1.3.0
+    # via -r requirement.in
+face-recognition-models==0.3.0
+    # via face-recognition
 fastapi==0.115.6
     # via -r requirement.in
 filelock==3.16.1
@@ -96,6 +104,7 @@ networkx==3.4.2
     # via torch
 numpy==2.2.1
     # via
+    #   face-recognition
     #   scikit-learn
     #   scipy
     #   transformers
@@ -105,7 +114,9 @@ packaging==24.2
     #   huggingface-hub
     #   transformers
 pillow==11.0.0
-    # via sentence-transformers
+    # via
+    #   face-recognition
+    #   sentence-transformers
 postgrest==0.18.0
     # via supabase
 propcache==0.2.1
@@ -123,6 +134,8 @@ python-dateutil==2.9.0.post0
     # via
     #   realtime
     #   storage3
+python-multipart==0.0.20
+    # via -r requirement.in
 pyyaml==6.0.2
     # via
     #   huggingface-hub

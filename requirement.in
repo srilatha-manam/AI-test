@@ -2,3 +2,6 @@ fastapi
 uvicorn
 sentence-transformers
 supabase
+face_recognition
+python-multipart
+psycopg2-binary
